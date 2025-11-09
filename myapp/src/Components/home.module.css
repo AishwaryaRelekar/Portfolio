@@ -1,0 +1,111 @@
+.container {
+  margin: 100px auto;
+  width: 90%;
+}
+.content {
+  text-align: center;
+}
+.content h1 {
+  font-size: 4rem;
+}
+.content h3 {
+  font-size: 3rem;
+}
+/* .content h3 span {
+  color: rgb(32, 107, 177);
+} */
+.typingtxt {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  /* width: 280px; */
+  /* display: flex; */
+  /* position: relative */
+}
+.typingtxt span {
+  position: relative;
+}
+.typingtxt span::before {
+  content: "Web Developer";
+  color: gold;
+  animation: words 6s infinite;
+}
+.typingtxt span::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  border-left: 3px solid black;
+  right: 0;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid black;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "Web Developer";
+  }
+  21%,
+  40% {
+    content: "Web Designer";
+  }
+  41%,
+  100% {
+    content: "Front-End Developer";
+  }
+}
+/* .content h1 {
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(18), cursor 2s step-end infinite alternate;
+  animation-delay: 5;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+} */
+
+.container .content p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.icon {
+  width: 50%;
+  margin: 15px auto;
+}
+.icon a {
+  width: 100%;
+}
+
+.icon a i {
+  font-size: 1.3rem;
+  padding: 15px;
+  border: 1px solid rgb(33, 104, 185);
+  border-radius: 50%;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.icon a i:hover {
+  transform: scale(1.2);
+}

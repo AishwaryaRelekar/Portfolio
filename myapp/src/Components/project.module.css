@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.cont2 {
+  margin: 40px auto;
+  width: 90%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px 50px;
+  padding: 60px 50px;
+}
+
+.container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 300px;
+  height: 210px;
+  background: transparent;
+  border: 2px solid rgb(33, 104, 185);
+  border-radius: 20px;
+  box-shadow: 0 2px 3px rgb(33, 104, 185);
+  transition: 0.5s;
+}
+
+.container .card:hover {
+  height: 300px;
+}
+
+.card .img {
+  position: absolute;
+  top: 20px;
+  width: 280px;
+  height: 150px;
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .img {
+  top: -70px;
+  scale: 0.75;
+  border-radius: 10px;
+  box-shadow: 0 15px 45px rgba(207, 207, 207, 0.2);
+}
+.card .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  position: absolute;
+  top: 170px;
+  color: black;
+  width: 100%;
+  padding: 0 15px;
+  height: 33px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  top: 70px;
+  overflow: visible;
+}
+
+.card .content h2 {
+  font-size: 1.5rem;
+  color: white;
+}

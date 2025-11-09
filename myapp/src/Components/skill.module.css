@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid white;
+}
+
+.container h1 {
+  text-align: left;
+  color: white;
+  font-size: 2rem;
+}
+
+.container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  cursor: pointer;
+  transition: background-color 2s ease;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  background-color: #fff;
+}
+
+.skilldesc {
+  border: 1px solid white;
+  width: 55%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.FE,
+.BE {
+  display: none;
+}
+/* .row .skill {
+  width: 50%;
+  height: 60vh;
+  border: 1px solid white;
+}
+.row .skill .row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.row .skill .box1,
+.box2 {
+  margin-top: 20px;
+  min-width: 40%;
+  height: 20vh;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.skill .row1 .box1 h2 {
+  border: 1px solid white;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  min-width: 20%;
+  height: 10vh;
+  border-radius: 50%;
+  background: url("fe2.png") center center no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+
+.skill .row1 .box1,
+.box2 h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 35px;
+}
+
+.skill .row1 .box2 h2 {
+  border: 1px solid white;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  min-width: 20%;
+  height: 10vh;
+  border-radius: 50%;
+  background: url("be1.png") center center no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+.row .skilldesc {
+  width: 40%;
+  height: 60vh;
+  border: 1px solid white;
+} */

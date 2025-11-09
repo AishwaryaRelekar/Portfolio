@@ -1,0 +1,26 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.navitem {
+  padding: 20px;
+  font-size: 1.4rem;
+  transition: color 0.5s;
+}
+
+.navitem:hover {
+  color: rgb(85, 170, 250);
+  border-bottom: 2px solid rgb(8, 98, 158);
+}
